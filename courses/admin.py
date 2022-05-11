@@ -20,7 +20,7 @@ class CategoryAdmin(admin.ModelAdmin):
 class CourseAdmin(admin.ModelAdmin):
     list_display = ('category', 'title', 'teacher', 'difficulty', 'number_of_student', 'created')
     search_fields = ('category', 'title',)
-    list_filter = ('teacher', 'difficulty',)
+    list_filter = ('teacher', 'difficulty','created', 'updated')
 
 
 @admin.register(Rating)
